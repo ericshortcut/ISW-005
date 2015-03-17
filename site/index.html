@@ -12,7 +12,13 @@
       
     body{
         font-family: Verdana, Arial, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
+        margin: 30px;
+        background-color: #EEE;
+        /* url pode ser com ou sem aspas */
+        /* só com essa propriedade ela repete em x e y*/
+        background-image: url("imagens/fundo.png"); 
+        background-repeat: repeat-y;
     }
       
     h1{
@@ -21,12 +27,75 @@
         font-family: Verdana, Arial, sans-serif;
         /* #RRGGBB */
         color: #b0cada;
+        margin: 0px;
     }
       
     img{
         float: right;
+        /*
+             [BOX MODEL]
+            - Margin: margem do componente
+            - Padding: preenchimento ou espaçamento interno
+            - Border: borda do componente
+        */
+        /*margin-left: 10px;*/
+        /*margin-bottom: 10px;*/
+        margin: 10px 0px 10px 10px;
+        /* margin-right margin-left */
+        padding: 10px;
+        /* Propriedades de borda */
+        border-width: 2px;
+        border-style: dotted;
+        border-color: #BADA55;
+        border: 1px dashed #808080;
       }
       
+/*
+      p{
+        text-align: justify;
+      }
+*/
+      /* alterar cor de fundo, cor da fonte e o box-model*/
+      h1{
+        background-color: #238BFF; /* cor de fundo */
+        color: white; /* cor do texto */
+        padding: 10px 20px; /* espaçamento interno */
+        border: 3px solid #333; /* borda de 3px solida da cor #333 */
+          
+      }
+      /* links da página na cor preta */
+      a{
+        /*color: rgb( 100% , 0%, 0% )  ou rgb(255,0,0); */
+        color: #f00;
+      }
+
+      table
+      {
+        font: 18px "Arial";
+        /* remove o espaçamento das bordas da tabela */
+        /*border-collapse: collapse; */
+        empty-cells: hide;
+        border-spacing: 0.1px;
+      }
+
+      th
+      {
+        font-weight: normal;
+        color: white;
+        background-color: black;
+        text-align: left;
+      }
+
+      th,td
+      {
+        padding: 5px;
+        border: 1px solid gray;
+      }
+
+      thead th
+      {
+        color: #238BFF;
+      }
   </style>
 </head>
 <body>
@@ -62,17 +131,20 @@
     de Educação Tecnológica Paula Souza.
   </p>
 
-  <h2>Reconheciment</h2>
+  <h2>Reconhecimento</h2>
   <p>
     O Curso Superior de Tecnologia em Processamento de Dados que foi 
     reconhecido através da Portaria 354, de 9 de março de 1994, 
     M.E.D. (Ministério da Educação e do Desporto).
-    = == == = == == = == == = == == = == == = == == = == == = 
-    = == == = == == = == == = == == = == == = == == = == == = 
-    = == == = == == = == == = == == = == == = == == = == == = 
-    = == == = == == = == == = == == = == == = == == = == == = 
-    = == == = == == = == == = == == = == == = == == = == == = 
-    = == == = == == = == == = == == = == == = == == = == == = 
+    O Curso Superior de Tecnologia em Processamento de Dados que foi 
+    reconhecido através da Portaria 354, de 9 de março de 1994, 
+    M.E.D. (Ministério da Educação e do Desporto).
+    O Curso Superior de Tecnologia em Processamento de Dados que foi 
+    reconhecido através da Portaria 354, de 9 de março de 1994, 
+    M.E.D. (Ministério da Educação e do Desporto).
+    O Curso Superior de Tecnologia em Processamento de Dados que foi 
+    reconhecido através da Portaria 354, de 9 de março de 1994, 
+    M.E.D. (Ministério da Educação e do Desporto).
     </p>
     <ul>
         <li> 05/2: início das aulas</li>
