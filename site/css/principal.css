@@ -1,0 +1,139 @@
+/* reset */
+section
+{
+	clear: both;
+}
+
+/*
+	
+	1) Usando Classes, posicione as imagens em lados opostos (à sua escolha)
+
+ */
+.imagem-principal
+{
+	float: right;
+}
+
+.imagem-secundaria
+{
+	float: left;
+}
+
+/*
+	
+	2) Altere a cor de Fundo por uma imagem à sua escolha (Busque na web)
+
+ */
+
+body
+{
+	background-image: url("images/draw.jpg");
+}
+
+/*
+	
+	3) Aplique ao h2 a propriedade "font-variant" com o valor "small-caps"
+	e confira o resultado
+
+ */
+h2
+{
+	font-variant: small-caps;
+}
+/*
+	
+	4) Faça com que os links sejam exibidos sem sublinado - exceto se forem
+	selecionados (nesta situação. faça com que sua cor mude também)
+
+ */
+a
+{
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus
+{
+	color: black;
+	text-decoration: underline;	
+}
+/*
+	
+	5) Defua um div ("wrapper") capaz de garantir que o conteúdo de sua página
+	faça uso de 95% do espaço disponível na janela do navegador, alinhando-o
+	tabém ao centro.
+
+ */
+.wrapper
+{
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*
+	
+	6) Crie uma nova seção ("Parcerias") no final da página, formate-a de forma
+	adequada e crie uma lista não ordenada com os seguintes itens:
+		- CIEE									link para: httpd://www.ciee.org.br;
+		- Universia							link para: http://www.universia.com.br;
+		- Prefeitura de Santos 	link para: http://www.santos.sp.gov.br;
+
+ */
+ul
+{
+	margin: 20px 0 0 0;
+}
+li
+{
+	list-style: none;
+	padding: 10px;
+	background-color: #CCC;
+	border: 1px solid #FFF;
+	width: 40%;
+}
+
+/*
+	
+	7) Utilizando CSS, faça com que haja uma margem inferior de 10px entre cada
+	elemento da lista
+
+ */
+li
+{
+	margin: 0 0 10px 0;
+}
+/*
+	
+	8) Redefina as dimensões de sua tabela para 400 (largura) x 150 (altura)
+
+ */
+table
+{
+	width: 400px;
+	height: 150px;
+}
+/*
+	
+	9) Insira um enchimento (padding) de 10px no cabeçalho de nível 1 da página
+
+ */
+
+h1
+{
+	padding: 10px;
+}
+
+.pacman
+{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border-radius: 50%;
+}
+.pacman-mouth
+{
+	width: 50%;
+	height: 50%;
+	border: 1px solid black;
+}
