@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+<body>
+<form method="post" action="http://192.168.43.115:8989/">
+	<p>
+		<label for="nome">Nome</label>
+		<input id="nome" name="nome" type="text" size="10" maxlength="15">
+		<p>
+			<!-- para formatar via css textAreaSize * em -->
+			<textarea 
+				id="comentario" name="comentario" 
+				rows="10" cols="30"
+			>Hello world</textarea>
+		</p>
+		<p>
+			<label for="curso">
+		
+		Escolha seu curso
+		</label>
+		<!-- <select name="curso" id="curso" size="5" multiple> -->
+		<select name="curso" id="curso">
+			<option value="nenhum" selected>Selecione...</option>
+			<option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+			<option value="GP">Gestão Portuária</option>
+			<option value="LOG">Logística</option>
+			<option value="SI">Sistemas para Internet</option>
+		</select>
+		<fieldset>
+			<legend>Sexo</legend>
+			<label><input type="radio" value="M" name="sexo">Masculino</label>
+			<label><input type="radio" value="F" name="sexo">Feminino</label>
+		</fieldset>
+	</p>
+
+	<p>
+		<legend>Assinale os seus sites favoritos</legend>
+		<label>google<input type="checkbox" name="sites-favoritos" value="site-google"></label>
+		<label>facebook<input type="checkbox" name="sites-favoritos" value="site-facebook"></label>
+		<label>twitter<input type="checkbox" name="sites-favoritos" value="site-twitter"></label>
+		<label>caniuse.com<input type="checkbox" name="sites-favoritos" value="site-caniuse"></label>
+	</p>
+	<!-- reset -->
+	<input type="reset" value="Reset">
+	<!-- submit -->
+	<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
