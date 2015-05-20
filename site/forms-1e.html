@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <style>
+
+      body
+      {
+          font-family: "Helvetica";
+      }
+
+      label
+      {
+        display: block;
+        margin:10px 0;
+      }
+
+      input
+      {
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .info
+      {
+        color:#F00;
+        font-size:12px;
+        font-style:normal
+      }
+
+      .enviar
+      {
+        font-size: 1.3em;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background: #FFF;
+        color:#44447B;
+        border:2px solid #44447B;
+      }
+
+      .enviar:hover
+      {
+        background:#44447B;
+        color:#FFF;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="hello.php" enctype="multipart/form-data">
+
+    		<p>
+    			<label for="nome">Nome do perfil</label>
+    			<input id="nome" name="nome" type="text" size="40" maxlength="15"
+                 placeholder="Digite o nome e o sobrenome" autofocus tabindex="1" autocomplete="on"
+                 pattern="[a-zA-Z]+\ [a-zA-Z]+">
+    		</p>
+
+        <p>
+    			<label for="placa">Placa do veículo <span class="info">(ex: ABC-1234)</span></label>
+    			<input id="placa" name="placa" type="text" size="10" minlength="8" maxlength="8"
+                 value="ABC-1234" readonly2 tabindex="3"
+                 pattern="[a-zA-Z]{3}-[0-9]{4}"
+                 title="3 caracteres alfabéticos seguidos de hífen e mais 4 numéricos">
+    		</p>
+
+        <p>
+    			<label for="arquivo">Foto</label>
+    			<input id="arquivo" name="arquivo" type="file" accept="image/jpeg" tabindex="2"
+                 value="Selec">
+    		</p>
+        <p>
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </p>
+        <input type="submit" value="Enviar" class="enviar" tabindex="4">
+        <p>
+          <input list="names" />
+          <datalist id="names">
+          	<option value="Noah">
+          	<option value="Liam">
+          	<option value="Mason">
+          	<option value="Jacob">
+          	<option value="William">
+          	<option value="Ethan">
+          	<option value="Michael">
+          	<option value="Alexander">
+          	<option value="James">
+          	<option value="Daniel">
+          	<option value="Elijah">
+          	<option value="Benjamin">
+          	<option value="Logan">
+          	<option value="Aiden">
+          	<option value="Jayden">
+          	<option value="Matthew">
+          	<option value="Jackson">
+          	<option value="David">
+          	<option value="Lucas">
+          	<option value="Joseph">
+          	<option value="Anthony">
+          	<option value="Andrew">
+          	<option value="Samuel">
+          	<option value="Gabriel">
+          	<option value="Joshua">
+          	<option value="John">
+          	<option value="Carter">
+          	<option value="Luke">
+          	<option value="Dylan">
+          	<option value="Christopher">
+          	<option value="Isaac">
+          	<option value="Oliver">
+          	<option value="Henry">
+          	<option value="Sebastian">
+          	<option value="Caleb">
+          	<option value="Owen">
+          	<option value="Ryan">
+          	<option value="Nathan">
+          	<option value="Wyatt">
+          	<option value="Hunter">
+          	<option value="Jack">
+          	<option value="Christian">
+          	<option value="Landon">
+          	<option value="Jonathan">
+          	<option value="Levi">
+          	<option value="Jaxon">
+          	<option value="Julian">
+          	<option value="Isaiah">
+          	<option value="Eli">
+          	<option value="Aaron">
+          	<option value="Charles">
+          	<option value="Connor">
+          	<option value="Cameron">
+          	<option value="Thomas">
+          	<option value="Jordan">
+          	<option value="Jeremiah">
+          	<option value="Nicholas">
+          	<option value="Evan">
+          	<option value="Adrian">
+          	<option value="Gavin">
+          	<option value="Robert">
+          	<option value="Brayden">
+          	<option value="Grayson">
+          	<option value="Josiah">
+          	<option value="Colton">
+          	<option value="Austin">
+          	<option value="Angel">
+          	<option value="Jace">
+          	<option value="Dominic">
+          	<option value="Kevin">
+          	<option value="Brandon">
+          	<option value="Tyler">
+          	<option value="Parker">
+          	<option value="Ayden">
+          	<option value="Jason">
+          	<option value="Jose">
+          	<option value="Ian">
+          	<option value="Chase">
+          	<option value="Adam">
+          	<option value="Hudson">
+          	<option value="Nolan">
+          	<option value="Zachary">
+          	<option value="Easton">
+          	<option value="Blake">
+          	<option value="Jaxson">
+          	<option value="Cooper">
+          	<option value="Lincoln">
+          	<option value="Xavier">
+          	<option value="Bentley">
+          	<option value="Kayden">
+          	<option value="Carson">
+          	<option value="Brody">
+          	<option value="Asher">
+          	<option value="Nathaniel">
+          	<option value="Ryder">
+          	<option value="Justin">
+          	<option value="Leo">
+          	<option value="Juan">
+          	<option value="Luis">
+          	<option value="Camden">
+          	<option value="Tristan">
+          </datalist>
+        </p>
+  </body>
+</html>
